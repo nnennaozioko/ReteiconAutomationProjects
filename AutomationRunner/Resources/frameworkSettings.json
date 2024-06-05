@@ -1,0 +1,13 @@
+{
+  "BrowserType": "", // [chrome/firefox/ie/safari]Default Browser Chrome
+  "BrowserVersion": "", //Blank
+  "GridHubUrl": "", // default is local. Grid url format --http://localhost:4444/wd/hub
+  "Region": "12", // Region name should match with
+  "StepScreenShot": "off",
+  "ExtentReportPortalUrl": "",
+  "ExtentReportPortal": "off",
+  "Loglevel": "Debug",
+  "DataSetLocation": "",
+  "DownloadedLocation":  ""
+
+}

@@ -1,0 +1,76 @@
+
+1. Walk us through your CV
+
+2. What are the benefits of Automation Testing?
+   a. I
+
+3. What are the pros and cons of selenium
+
+4. Have you heard of page object models
+
+5. Benefits of pageobject
+
+6. Saying you are working on your UI and there's a small window pop up or a browser pop up how would you handle that?
+
+
+7. When you click on something and a pop up comes up how do you typically handle that?
+
+8. Stale element reference exception  how do you deal with that
+
+The StaleElementReferenceException is a common exception in Selenium WebDriver that occurs when the element you're trying to interact with is no longer attached to the DOM (Document Object Model) because it has been refreshed or modified. This typically happens when the DOM is updated dynamically, such as when elements are added or removed asynchronously via JavaScript.
+
+To deal with the StaleElementReferenceException in C# with Selenium WebDriver, you can employ a few strategies:
+
+Retry Mechanism: Implement a retry mechanism to attempt to find and interact with the element again. You can catch the StaleElementReferenceException and retry the operation until it succeeds or a maximum number of retries is reached.
+
+Re-locate the Element: Instead of storing the element reference and using it later, re-locate the element just before interacting with it again. This ensures that you're working with the latest version of the element.
+
+Wait for Element Stability: Use explicit or implicit waits to ensure that the element is stable and ready for interaction before attempting to interact with it. This allows time for the DOM to settle after dynamic changes.
+
+9. What's the difference between driver.quit and driver. Close
+
+In Selenium WebDriver with C#, both driver.Quit() and driver.Close() methods are used to close the browser window. However, there are differences between them:
+
+driver.Quit():
+
+driver.Quit() is used to close the entire browser session along with all associated windows and tabs opened by the WebDriver instance.
+It terminates the WebDriver session and releases all associated resources, including browser processes and WebDriver instances.
+It's typically used at the end of the test script or when you want to completely close the browser session.
+driver.Close():
+
+driver.Close() is used to close only the current browser window or tab that the WebDriver is currently focused on.
+It closes the window or tab without terminating the entire WebDriver session.
+If there are multiple windows or tabs open, calling driver.Close() will close only the window or tab where the WebDriver is currently focused, leaving other windows or tabs open.
+
+10. What is regression testing?
+Regression testing is a type of software testing that focuses on verifying that previously developed and tested software still performs correctly after changes or updates have been made to it. The purpose of regression testing is to ensure that new code changes, bug fixes, or system enhancements have not adversely affected existing functionalities and that the software continues to meet its requirements.
+
+Smoke Testing is a type of testing that is done to ensure that the acute functionalities of the program are working fine. It is also known as a subset of acceptance testing, and it is used to test all over the function of the system/product. On the other hand. 
+
+Sanity Testing is done to check the bugs have been fixed after the build. And it is also known as a subset of regression testing. There is confusion between smoke testing and sanity testing that these two types of testing are the same, but both smoke testing and sanity testing have their objectives and priorities. So, 
+
+Sanity testing and smoke testing are two important testing techniques in software engineering that are often used to check the basic functionality of a software application. Although both techniques are used to check the basic functionality of a software application, there are some key differences between them.
+
+11. What is the difference between unit and integration and system testing?
+
+The Test Pyramid is a model that represents a balanced testing strategy with multiple testing levels. At the top, you have End-to-End (E2E) tests that validate the full system and critical user journeys. In the middle, Integration tests verify how components work together, and unit tests at the bottom focus on individual parts.
+
+12. Why is manual testing important?
+User Experience Validation: Manual testing allows testers to evaluate the software from a user's perspective, focusing on aspects such as usability, intuitiveness, and overall user experience. Human testers can identify issues that automated tests might miss, ensuring that the software meets user expectations.
+
+Exploratory Testing: Manual testing enables exploratory testing, where testers can uncover unforeseen issues, edge cases, and usability problems that may not be covered by scripted test cases. This flexibility is especially valuable in early testing stages and for validating new features.
+
+Adaptability to Change: Manual testing is highly adaptable to changes in requirements, user needs, and project scope. Testers can quickly adjust test cases and strategies based on evolving project requirements, allowing for efficient testing throughout the software development lifecycle.
+
+Complex Scenario Handling: Manual testing is effective in handling complex scenarios that may be challenging to automate, such as multi-step workflows, non-linear user interactions, and real-world usage scenarios. Testers can apply domain knowledge and creative problem-solving skills to identify and address potential issues.
+
+Early Detection of Usability Issues: Manual testing helps identify usability issues early in the development process, allowing teams to make necessary improvements before the software reaches production. By simulating real user interactions, testers can provide valuable feedback on the software's interface, navigation, and accessibility.
+
+Cost-Effectiveness for Small Projects: For small projects or projects with limited resources, manual testing may be more cost-effective than setting up and maintaining automated testing infrastructure. Manual testing requires minimal upfront investment and can be tailored to project needs without relying on specialized tools.
+
+Complement to Automated Testing: Manual testing complements automated testing by providing a human perspective and validating automated test results. It helps bridge gaps in test coverage and ensures that critical aspects of the software are thoroughly tested, even in complex or evolving environments.
+
+Accessibility Testing: Manual testing is essential for conducting accessibility testing, where testers assess the software's usability for users with disabilities. Human testers can evaluate factors such as screen reader compatibility, keyboard navigation, and color contrast, ensuring that the software is inclusive and accessible to all users.
+
+13 Have you used browser stack
+
