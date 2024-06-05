@@ -78,7 +78,7 @@ namespace ReteiconAutomationProject.Features
 #line 5
 #line hidden
 #line 6
-  testRunner.Given("I navigate to the website \"https://mentorskid.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("I navigate to the website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
     testRunner.When("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

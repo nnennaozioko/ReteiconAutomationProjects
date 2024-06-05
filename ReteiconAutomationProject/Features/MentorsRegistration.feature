@@ -4,7 +4,7 @@ I want to register to become a mentor
 
 
   Background: 
-    Given I navigate to the website "https://mentorskid.com"
+    Given I navigate to the website 
     When I click join as a mentor
     Then welcome page displayed
 

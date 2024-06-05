@@ -11,19 +11,14 @@ namespace ReteiconAutomationProject.StepDefinitions
 
         MentorsRegistrationPage mentorsRegistrationPage = new MentorsRegistrationPage();
 
-        [Given(@"I navigate to the website ""([^""]*)""")]
-        public void GivenINavigateToTheWebsite(string url)
+        [Given(@"I navigate to the website")]
+        public void GivenINavigateToTheWebsite()
         {
-            mentorsRegistrationPage.Navigate(url);
+            mentorsRegistrationPage.Navigate("https://mentorskid.com");
         }
 
-        //[Given(@"I navigate to the website")]
-        //public void GivenINavigateToTheWebsite()
-        //{
-        //   mentorsRegistrationPage.Navigate()
-        //}
 
-
+        
 
         [When(@"I click join as a mentor")]
         public void WhenIClickJoinAsAMentor()
