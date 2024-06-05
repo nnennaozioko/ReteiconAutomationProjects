@@ -3,7 +3,7 @@
 A short summary of the feature
 
 Background:
-  Given I navigate to the website "https://mentorskid.com"
+  Given I navigate to the website 
     When I click login button
     Then  login welcome page displayed
 

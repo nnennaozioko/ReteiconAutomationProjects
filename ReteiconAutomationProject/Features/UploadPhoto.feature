@@ -3,7 +3,7 @@
 As a user I want to upload a photo to create a profile
 
 Background: 
-    Given I navigate to the website "https://mentorskid.com"
+    Given I navigate to the website 
     When I click login button
     Then  login welcome page displayed 
     When I enter the email address "nike@gmail.com"
